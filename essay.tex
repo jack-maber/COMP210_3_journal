@@ -1,0 +1,44 @@
+% Please do not change the document class
+\documentclass{scrartcl}
+% Please do not change these packages
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+\usepackage{setspace}
+\doublespace
+% You may add additional packages here
+\usepackage{amsmath}
+\usepackage{url}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+% Please include a clear, concise, and descriptive title
+\title{How does the engineering workflow of a video game differ from that of other software when undertaking the translation process for Localisation?}
+% Please do not change the subtitle
+\subtitle{COMP160 - Software Engineering Essay}
+% Please put your student number in the author field
+\author{1606119}
+\begin{document}
+\maketitle
+
+
+\abstract{Localisation of software has the capacity to pose many a challenge to developers, as there are so many factors and small details that come into play, with a large portions of the software needing to be completely overhauled depending on the locale, a set of "Internationalisation Standards"\cite[pg.5]{hogan2004key} have to be followed by the developer if they want their software to be understandable and usable in the local they are adapting it for, this is applicable to both video games and other types of software and so my essay will compare and contrast the different steps that the developers of these types of software have to take.}
+
+\section{Introduction}
+As technology's accessibility and uptake across the globe is forever increasing, many new emerging markets opportunities are opening up for software developers and having localised versions of their software allows for ``Local users better understand and use it, attract more users, and increase software sales''\cite[pg.1]{6601827}. As previously mentioned, developers have to work to a set of standards to make sure that their software is understandable to a variety of markets, and through my research I have found that, due to the differences in the engineering workflow of video games and other types of software, that different organisations and groups have created several different sets of standards for different types of software, and as games require a lot more context and speech to relay the story to the player, the workflow is a lot larger, however there are some points where they overlap and flow in a similar way. 
+
+\section{Integral Differences in Internationalisation Standards}
+As I have found through my research, compared to other types of software, video games have both a much higher amount of content, and require much more work to localise than other types of software e.g. Business, as ``The linguistic port is more than simple translation; it involves use of vernacular and dialect as well as culturally appropriate interpretation of the game context'' \cite[pg.1]{losavio2014linguistic}, meaning the translation and it's implementation will need to use local language and the correct use of this to be fully understood; an increasing step that developers are taking is to ``Cultralize'' their software\cite[pg.4]{bestpractices}, which goes further into the games content and removes anything that may be seen as offensive or not well received in a particular location, this has become a standard of games internationalisation, as without the correct content being removed or replaced, it will not pass certification in that region, which extends the development time and wastes money and resources, while business software won't have any of these issues it doesn't need to be certification. Which when focusing on the modularity (Engineering Principle) of their software, game developers will need to focus on making sure that ``Resource files should store all text used in the game'' and that they ``do not hard code text strings in the source code.''\cite[pg.24]{bestpractices} as having things such as the subtitle text and the dialogue files hard coded makes it very hard to change them for localisation or certification work, which could cause issues with the code as it's deviating from it's original form; as this is noted good practice, many game developers utilise this, such as Bioware, who's alien languages are simply a couple of sound bytes repeated for every locale \cite[pg.1]{losavio2014linguistic}, the only need being to translate the subtitles, which significantly cuts the workload, at this point the similarities of the workflow for both types of software really shows, but in the next section, the paper will cover the smaller the defining features of both, in particular when the translation process is undertaken.
+
+
+\section{The Translation Process}
+Due to the differences between the two types software discussed in the last section, and through the sources that were found, translation of the software's text and the changes that need to be made to said text to meet the Internationalisation standards/best practices that I covered seems to be the biggest part of the process, along with the ``Cultralization'' of said text, so I will now cover that in greater detail. As discussed in the previous section, as games become much larger and rely more heavily on fictional story elements to drive the narrative, these features can't simply be translated. Where as there are sources to suggest that the use of translation software to localise software that features ``highly repetitive texts'' \cite[pg.1]{schaler1994practical} a trait that business software seems to have, allows the software's text to be quickly changed, meaning it can be sold in other markets quicker and take hold of valuable market shares\cite[pg.1]{schaler1994practical}, and significantly cutting the work load,and although this type of tool would be extremely useful in games development, the aforementioned additional amount of content normally found in games over business software, so this process is normally undertaken by a team of specialist employees, who would be more expensive to employ and the process would most definitely take longer, the final product would most likely be more accurate and be much more ``cultralized'' as it has been found that the aforementioned commercial translation software , or at least the program used in this particular paper require a ``100 percent match'' to successfully translate the word, which is another reason why the tool wouldn't be particularly beneficial to game development, but it does crossover with business software as it may also feature program or locale specific terminology such as currency names\cite[pg.2]{schaler1994practical}, so this automatic process would still need to be checked by a human but it would still cut the work load significantly, but recently there have been developments to try and make translation easier across the board.\medskip
+
+\noindent One of these developments was the UNICODE standard \cite{unicodestandards}, ``which specifies the representation of text in modern software products and standards'' \cite[pg.6]{schaler2004language}, and subvert problems such as The Korean Character Code\cite{park2016korean}, which was very controversial at the time , by collecting all of the used characters in all of the different languages and making how they are displayed and encoded the same, it makes for less work for developers as there is no need to rewrite display code for their software, and fixes the problem of locales that read right to left, as it allows for bi-directional display of said text\cite{bi-directional}, which is very helpful to developers who might have online portions as having bi-directional text is a ``Internationalisation Standard'' \cite{standards} that needs to be followed by developers of software such as business, but this also carries over to game development with features such as text boxes and subtitles.  
+
+\section{Conclusion}
+Through developments in the standards that developers must follow and ones that affect the computing field overall, the workflows of game development and other software has been brought closer and closer together, although game development still has a much longer and more involved localisation process due to the sheer amount of content over other types of software, and no tool will ever bring it down to the a level where a human will no longer be needed.
+
+\raggedright
+\bibliographystyle{ieeetran}
+\bibliography{references}
+\end{document}
